@@ -38,13 +38,13 @@ appended_table(table_data);
         let response = {
             filter_date
         }
-
+    // Creating if function to show a message when the date is  not found
 
     if(response.filter_date.length !== 0) {
         appended_table(filter_date);
     }
 
-    // Top if only works for filtering the date
+    // Message to show if the date is not found
     
         else {
             tbody.append("tr").append("td").text("There are no sighthings here!");
